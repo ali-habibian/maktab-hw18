@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="q2/css/bootstrap.css">
+    <script src="q2/js/bootstrap.min.js"></script>
+    <title>Save Book</title>
+</head>
+<body>
+
+<div class="card shadow-lg col col-sm-4 col-md-4 p-4 mx-auto mt-2 bg-light text-black-50">
+    <form action="SaveBookServlet" method="post">
+        <div class="mb-3">
+            <label for="name" class="form-label">Book Name:</label>
+            <input type="text" class="form-control" id="name" name="name">
+        </div>
+        <div class="mb-3">
+            <label for="isbn" class="form-label">ISBN:</label>
+            <input type="text" class="form-control" id="isbn" name="isbn">
+        </div>
+        <div class="mb-3">
+            <label for="author" class="form-label">Author:</label>
+            <input type="text" class="form-control" id="author" name="author">
+        </div>
+        <div class="mb-3">
+            <label for="edition" class="form-label">Edition:</label>
+            <input type="text" class="form-control" id="edition" name="edition">
+        </div>
+        <div class="mb-3">
+            <label for="publisher" class="form-label">Publisher:</label>
+            <input type="text" class="form-control" id="publisher" name="publisher">
+        </div>
+        <div class="mb-3">
+            <label for="published" class="form-label">Published:</label>
+            <input type="date" class="form-control" id="published" name="published">
+        </div>
+        <div class="mb-3">
+            <label for="price" class="form-label">Price:</label>
+            <input type="text" class="form-control" id="price" name="price">
+        </div>
+
+        <button type="submit" class="btn btn-primary">Save</button>
+    </form>
+</div>
+
+</body>
+</html>
